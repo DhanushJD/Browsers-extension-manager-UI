@@ -11,19 +11,7 @@
     flex-direction: column;
   }
 }
-.extension-card{
-  box-sizing: border-box;
-  background-color: hsl(226, 25%, 17%);
-  border: 1px solid hsl(226, 11%, 37%);
-  padding-block-start: 0.9em;
-  padding-block-end: 1em;
-  padding-inline-start: 1em;
-  padding-inline-end: 0.5em;
-  border-radius: 0.9em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
+
 .extension-content{
   display: flex;
 }
