@@ -1,0 +1,118 @@
+.extensions-container{
+  margin-block-start: 1.2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 0.625em;
+  column-gap: 0.625em;
+}
+@media screen and (max-width:768px){
+  .extensions-container{
+    display: flex;
+    flex-direction: column;
+  }
+}
+.extension-card{
+  box-sizing: border-box;
+  background-color: hsl(200, 60%, 99%);
+  box-shadow: 0 0 3px  rgba(0,0,0, 0.2);
+  padding-block-start: 0.9em;
+  padding-block-end: 1em;
+  padding-inline-start: 1em;
+  padding-inline-end: 0.5em;
+  border-radius: 0.9em;
+}
+.extension-content{
+  display: flex;
+}
+.extension-subject{
+  margin-inline-start: 0.75em;
+  margin-block-start: 0.4em;
+}
+.extension-name{
+  color: hsl(227, 75%, 14%);
+  font-weight: 750;
+  margin-block-end: 0.4em;
+}
+.extension-description{
+  width: 95%;
+  font-size: 14px;
+  color: hsl(226, 11%, 37%);
+  font-weight: 450;
+}
+.extension-status-row{
+  margin-block-start: 3em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.remove-button{
+  color: hsl(227, 75%, 14%);
+  background-color: hsl(200, 60%, 99%);
+  border: 1px solid hsl(0, 0%, 78%);
+  padding: 0.4em 0.6em;
+  border-radius: 1.15em;
+  font-weight: 500;
+}
+.remove-button:focus{
+  background-color: hsl(0, 0%, 93%);
+  border: 1px solid hsl(0, 0%, 93%);
+  outline: none;
+  box-shadow: 0 0 0 1px hsl(200, 60%, 99%),
+              0 0 0 3px hsl(3, 71%, 56%);
+}
+.remove-button:hover{
+  background-color: hsl(3, 77%, 44%);
+  color: hsl(200, 60%, 99%);
+  border: 1px solid hsl(0, 0%, 93%);
+}
+.toggle-switch{
+  margin-inline-end: 0.9em;
+  width: 34px;
+  height: 18px;
+  position: relative;
+}
+.toggle-switch input{
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+.slider{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: hsl(0, 0%, 78%);
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.slider:focus{
+  outline: none;    
+  box-shadow: 0 0 0 1px hsl(200, 60%, 99%),
+              0 0 0 3px hsl(3, 86%, 64%);
+}
+.slider:hover{
+  background-color: hsl(3, 71%, 56%);
+}
+.slider::before{
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
+  background-color: hsl(200, 60%, 99%);
+  transition: transform 0.3s;
+}
+.toggle-switch input:checked+.slider{
+  background-color: hsl(3, 77%, 44%);
+}
+.toggle-switch input:checked+.slider::before{
+  transform: translateX(15.5px);
+}
+.toggle-switch input:checked+.slider:hover{
+  background-color: hsl(3, 71%, 56%);
+}
+.toggle-switch input+.slider:hover{
+  background-color: hsl(226, 11%, 37%);
+}

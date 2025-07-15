@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wdth,wght@0,62.5..100,100..900;1,62.5..100,100..900&display=swap" rel="stylesheet">
+
+  
+  <link id="general" rel="stylesheet" href="styles/dark/general.css">
+  <link id="header" rel="stylesheet" href="styles/dark/header.css">
+  <link id="main" rel="stylesheet" href="styles/dark/main.css">
+  
+
+  
+  <title>Frontend Mentor | Browser extensions manager UI</title>
+</head>
+<body>
+  <div class="container">
+    <nav class="nav-bar">
+      <div class="logo-container">
+        <div class="cropped-img">
+          <img class="extension-img" src="assets/images/logo.svg" alt="logo">
+        </div>
+        <p class="title">
+          Extensions
+        </p>
+      </div>
+      <button class="mode-button js-mode-button">
+        <img class="mode-img js-mode-img" src="assets/images/icon-sun.svg" alt="icon-sun">
+      </button>
+    </nav>
+    <main>
+      <div class="list-header">
+        <p class="header-title">
+          Extensions List
+        </p>
+        <div class="controls-list">
+          <button type="button" class="all-button js-all-button js-control-button">
+            All
+          </button>
+          <button type="button" class="active-button js-active-button js-control-button">
+             Active
+          </button>
+          <button type="button" class="inactive-button js-inactive-button js-control-button">
+            Inactive
+          </button>
+        </div>
+      </div>
+      <div class="extensions-container js-extension-container">
+      </div>
+    </main>
+
+    <script type="module" src="scripts/index.js"></script>
+  </div>
+</body>
+</html>

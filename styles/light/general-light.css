@@ -1,0 +1,17 @@
+body{
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(180deg, #EBF2FC 0%, #EEF8F9 100%);
+  color: hsl(0, 0%, 93%);
+  font-family: "Noto Sans", sans-serif;
+}
+p{
+  margin: 0;
+}
+
+button{
+  font-family: "Noto Sans", sans-serif;
+  cursor: pointer;
+}

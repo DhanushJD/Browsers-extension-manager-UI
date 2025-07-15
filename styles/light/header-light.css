@@ -1,0 +1,108 @@
+@media screen and (max-width:768px){
+  .list-header{
+    flex-direction: column;
+  }
+  .header-title{
+    margin-block-end: 0.625em;
+  }
+}
+.container{
+  margin-block-start: 1.7em;
+  box-sizing: border-box;
+  width: 82%;
+}
+.nav-bar{
+  box-sizing: border-box;
+  width: 100%;
+  height: 3.25em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(200, 60%, 99%);
+  padding-inline-start: 0.9em;
+  padding-block-start: 0.3em;
+  border-radius: 1em;
+  box-shadow: 0 0 3px  rgba(0,0,0, 0.2);
+}
+.logo-container{
+  display: flex;
+  align-items: center;
+}
+.cropped-img{
+  width: 2.4em;
+  overflow: hidden;
+}
+.extension-img{
+  width: 9em;
+}
+.title{
+  color: hsl(227, 75%, 14%);
+  font-size: 1em;
+  margin-block-end: 3px;
+  font-weight: 700;
+}
+.mode-button{
+  background-color: hsl(0, 0%, 93%);
+  border: none;
+  margin-inline-end: 0.9em;
+  margin-block-end: 0.3em;
+  padding: 0.6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.6em;
+  cursor: pointer;
+}       
+.mode-button:focus{
+  outline: none;
+  box-shadow: 0 0 0 1px hsl(200, 60%, 99%),
+              0 0 0 3px hsl(3, 71%, 56%);
+  background-color: hsl(0, 0%, 93%);           
+}
+.mode-button:hover{
+  background-color: hsl(0, 0%, 78%);   
+}
+.mode-img{
+  width: 1.35em;
+}
+main{
+  margin-block-start: 2.6em;
+}
+.list-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-title{
+  color: hsl(227, 75%, 14%);
+  font-size: 1.2em;
+  font-weight: 750;
+}
+.controls-list button{
+  background-color: hsl(200, 60%, 99%);
+  color: hsl(227, 75%, 14%);
+  border: none;
+  padding: 0.5em 0.9em;
+  border-radius: 1.2em;
+  margin-inline-start: 0.25em;
+  transition: background-color 0.3s;
+  
+  box-shadow: 0 0 3px  rgba(0,0,0, 0.2);
+}
+.controls-list button:focus{
+  outline: none;
+  box-shadow: 0 0 0 2px #EEF8F9,
+              0 0 0 4px hsl(3, 71%, 56%);
+  background-color: hsl(200, 60%, 99%);
+}
+.controls-list button:hover{
+  background-color: hsl(0, 0%, 93%);
+  color: hsl(226, 11%, 37%);
+}
+.controls-list button.selected{
+  background-color: hsl(3, 77%, 44%);
+  color: hsl(200, 60%, 99%);
+}
+.controls-list button.selected:hover{
+  background-color: hsl(3, 71%, 56%);
+}
