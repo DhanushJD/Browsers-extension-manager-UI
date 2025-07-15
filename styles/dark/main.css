@@ -20,9 +20,6 @@
   padding-inline-start: 1em;
   padding-inline-end: 0.5em;
   border-radius: 0.9em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 .extension-content{
   display: flex;
