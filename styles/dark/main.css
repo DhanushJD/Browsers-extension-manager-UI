@@ -27,6 +27,11 @@
 .extension-content{
   display: flex;
 }
+.extension-content img{
+  width: 3.75em;
+  height: 3.75em;
+  padding-block-start: 0.35em;
+}
 .extension-subject{
   margin-inline-start: 0.75em;
   margin-block-start: 0.4em;
